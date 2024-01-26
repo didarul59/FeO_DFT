@@ -1,0 +1,7 @@
+ &projwfc
+    outdir='./'
+    prefix='pwscf'
+    lsym=.true.
+    filproj = 'pdos'
+ /
+

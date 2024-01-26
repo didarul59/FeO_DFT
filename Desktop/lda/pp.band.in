@@ -1,0 +1,5 @@
+&BANDS
+  prefix = 'pwscf'
+  outdir = './'
+  filband = 'FeO_bands.dat'
+/

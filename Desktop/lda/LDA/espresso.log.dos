@@ -1,0 +1,53 @@
+
+     Program DOS v.6.1 starts on  9Jan2024 at 21:18:30 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on      50 processor cores
+     Number of MPI processes:                 5
+     Threads/MPI process:                    10
+     R & G space division:  proc/nbgrp/npool/nimage =       5
+
+   Info: using nr1, nr2, nr3 values from input
+
+   Info: using nr1, nr2, nr3 values from input
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation      =  SLA  PZ   NOGX NOGC ( 1  1  0  0 0 0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+               file Fe.pz-spn-kjpaw_psl.0.2.1.UPF: wavefunction(s)  3D renormalized
+               file O.pz-n-kjpaw_psl.0.1.UPF: wavefunction(s)  2P renormalized
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         301     134     44                10826     3203     608
+     Max         302     135     45                10827     3205     611
+     Sum        1509     673    221                54131    16021    3049
+
+     Generating pointlists ...
+     new r_m :   0.1610 (alat units)  1.6269 (a.u.) for type    1
+     new r_m :   0.1610 (alat units)  1.6269 (a.u.) for type    2
+
+     Check: negative/imaginary core charge=   -0.000230    0.000000
+
+     negative rho (up, down):  0.000E+00 2.254E-03
+
+     Gaussian broadening (read from input): ngauss,degauss=   0    0.010000
+
+
+     DOS          :     3.17s CPU         3.66s WALL
+
+
+   This run was terminated on:  21:18:33   9Jan2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

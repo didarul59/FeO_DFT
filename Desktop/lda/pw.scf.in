@@ -1,0 +1,59 @@
+&CONTROL
+                       title = 'FeO' ,
+                 calculation = 'scf' ,
+                restart_mode = 'from_scratch' ,
+                      outdir = './',
+    		 max_seconds =  8.64000e+04
+    		 pseudo_dir  = './',
+                      prefix = 'pwscf' ,
+                  wf_collect = .true. ,
+                   verbosity = 'high',
+/
+
+&SYSTEM
+    a                         =  5.34587e+00
+    b                         =  3.15856e+00
+    c                         =  5.31894e+00
+    cosac                     = -3.23174e-01
+    degauss                   =  1.00000e-02
+    ecutrho                   =  2.25000e+02
+    ecutwfc                   =  2.50000e+01
+    ibrav                     = -12
+    nat                       = 8
+    nspin                     = 2
+    ntyp                      = 2
+    occupations               = "smearing"
+    smearing                  = "marzari-vanderbilt"
+    starting_magnetization(1) =  2.00000e-01
+    starting_magnetization(2) =  0.00000e+00
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    diagonalization  = "david"
+    electron_maxstep = 200
+    mixing_beta      =  4.00000e-01
+    mixing_mode      = "plain"
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+K_POINTS {automatic}
+ 2  4  2  0 0 0
+
+
+ATOMIC_SPECIES
+Fe     55.84500  Fe.pz-spn-kjpaw_psl.0.2.1.UPF
+O      15.99940  O.pz-n-kjpaw_psl.0.1.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Fe      0.000000   0.000000   0.000000
+Fe      1.813475   0.000000   2.516768
+Fe      2.672934   1.579280   0.000000
+Fe     -0.859459   1.579280   2.516768
+O       3.687200   0.000000   1.266812
+O      -0.060250   0.000000   3.766723
+O       1.014266   1.579280   1.266812
+O       2.612684   1.579280   3.766723
+
+

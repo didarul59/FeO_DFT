@@ -1,0 +1,74 @@
+&CONTROL
+    calculation  = "bands"
+    max_seconds  =  8.64000e+04
+    outdir       = "./"
+    prefix       = "pwscf"
+    pseudo_dir   = "C:\Users\didar\.burai\.pseudopot"
+    restart_mode = "from_scratch"
+    title        = "FeO"
+    verbosity    = "high"
+    wf_collect   = .TRUE.
+/
+
+&SYSTEM
+    a                         =  5.34587e+00
+    b                         =  3.15856e+00
+    c                         =  5.31894e+00
+    cosac                     = -3.23174e-01
+    degauss                   =  1.00000e-02
+    ecutrho                   =  3.15000e+02
+    ecutwfc                   =  3.50000e+01
+    ibrav                     = -12
+    nat                       = 8
+    nbnd                      = 68
+    nspin                     = 2
+    ntyp                      = 2
+    occupations               = "smearing"
+    smearing                  = "marzari-vanderbilt"
+    starting_magnetization(1) =  2.00000e-01
+    starting_magnetization(2) =  0.00000e+00
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    diagonalization  = "david"
+    electron_maxstep = 200
+    mixing_beta      =  4.00000e-01
+    mixing_mode      = "plain"
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&BANDS
+    lsym           = .FALSE.
+    spin_component = 1
+/
+
+K_POINTS {crystal_b}
+10
+  0.000000   0.000000   0.000000  15
+  0.500000   0.500000   0.000000  7
+  0.500000   0.750000   0.250000  5
+  0.375000   0.750000   0.375000  15
+  0.000000   0.000000   0.000000  13
+  0.500000   0.500000   0.500000  9
+  0.625000   0.625000   0.250000  5
+  0.500000   0.750000   0.250000  10
+  0.500000   0.500000   0.500000  9
+  0.375000   0.750000   0.375000  1
+
+ATOMIC_SPECIES
+Fe     55.84500  Fe.pz-spn-kjpaw_psl.0.2.1.UPF
+O      15.99940  O.pz-n-kjpaw_psl.0.1.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Fe      0.000000   0.000000   0.000000
+Fe      1.813475   0.000000   2.516768
+Fe      2.672934   1.579280   0.000000
+Fe     -0.859459   1.579280   2.516768
+O       3.687200   0.000000   1.266812
+O      -0.060250   0.000000   3.766723
+O       1.014266   1.579280   1.266812
+O       2.612684   1.579280   3.766723
+
+
