@@ -1,0 +1,5 @@
+&inputhp
+   prefix = 'FeO'
+   !outdir = './'
+   nq1 = 1, nq2 = 1, nq3 = 1
+/
